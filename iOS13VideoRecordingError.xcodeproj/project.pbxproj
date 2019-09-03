@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BBC484B4231E5B5B00104FD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC484B3231E5B5B00104FD9 /* AppDelegate.swift */; };
+		BBC484B6231E5B5B00104FD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC484B5231E5B5B00104FD9 /* SceneDelegate.swift */; };
+		BBC484B8231E5B5B00104FD9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC484B7231E5B5B00104FD9 /* ContentView.swift */; };
+		BBC484BA231E5B8800104FD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC484B9231E5B8800104FD9 /* Assets.xcassets */; };
+		BBC484BD231E5B8800104FD9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC484BC231E5B8800104FD9 /* Preview Assets.xcassets */; };
+		BBC484C0231E5B8800104FD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC484BE231E5B8800104FD9 /* LaunchScreen.storyboard */; };
+		BBC484CB231E5B8900104FD9 /* iOS13VideoRecordingErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC484CA231E5B8900104FD9 /* iOS13VideoRecordingErrorTests.swift */; };
+		BBC484D6231E5B8900104FD9 /* iOS13VideoRecordingErrorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC484D5231E5B8900104FD9 /* iOS13VideoRecordingErrorUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BBC484C7231E5B8900104FD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBC484A8231E5B5900104FD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBC484AF231E5B5B00104FD9;
+			remoteInfo = iOS13VideoRecordingError;
+		};
+		BBC484D2231E5B8900104FD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBC484A8231E5B5900104FD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBC484AF231E5B5B00104FD9;
+			remoteInfo = iOS13VideoRecordingError;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BBC484B0231E5B5B00104FD9 /* iOS13VideoRecordingError.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS13VideoRecordingError.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBC484B3231E5B5B00104FD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BBC484B5231E5B5B00104FD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BBC484B7231E5B5B00104FD9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BBC484B9231E5B8800104FD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BBC484BC231E5B8800104FD9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BBC484BF231E5B8800104FD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BBC484C1231E5B8900104FD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBC484C6231E5B8900104FD9 /* iOS13VideoRecordingErrorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS13VideoRecordingErrorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBC484CA231E5B8900104FD9 /* iOS13VideoRecordingErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS13VideoRecordingErrorTests.swift; sourceTree = "<group>"; };
+		BBC484CC231E5B8900104FD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBC484D1231E5B8900104FD9 /* iOS13VideoRecordingErrorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS13VideoRecordingErrorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBC484D5231E5B8900104FD9 /* iOS13VideoRecordingErrorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS13VideoRecordingErrorUITests.swift; sourceTree = "<group>"; };
+		BBC484D7231E5B8900104FD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBC484AD231E5B5B00104FD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBC484C3231E5B8900104FD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBC484CE231E5B8900104FD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BBC484A7231E5B5800104FD9 = {
+			isa = PBXGroup;
+			children = (
+				BBC484B2231E5B5B00104FD9 /* iOS13VideoRecordingError */,
+				BBC484C9231E5B8900104FD9 /* iOS13VideoRecordingErrorTests */,
+				BBC484D4231E5B8900104FD9 /* iOS13VideoRecordingErrorUITests */,
+				BBC484B1231E5B5B00104FD9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BBC484B1231E5B5B00104FD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBC484B0231E5B5B00104FD9 /* iOS13VideoRecordingError.app */,
+				BBC484C6231E5B8900104FD9 /* iOS13VideoRecordingErrorTests.xctest */,
+				BBC484D1231E5B8900104FD9 /* iOS13VideoRecordingErrorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBC484B2231E5B5B00104FD9 /* iOS13VideoRecordingError */ = {
+			isa = PBXGroup;
+			children = (
+				BBC484B3231E5B5B00104FD9 /* AppDelegate.swift */,
+				BBC484B5231E5B5B00104FD9 /* SceneDelegate.swift */,
+				BBC484B7231E5B5B00104FD9 /* ContentView.swift */,
+				BBC484B9231E5B8800104FD9 /* Assets.xcassets */,
+				BBC484BE231E5B8800104FD9 /* LaunchScreen.storyboard */,
+				BBC484C1231E5B8900104FD9 /* Info.plist */,
+				BBC484BB231E5B8800104FD9 /* Preview Content */,
+			);
+			path = iOS13VideoRecordingError;
+			sourceTree = "<group>";
+		};
+		BBC484BB231E5B8800104FD9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BBC484BC231E5B8800104FD9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BBC484C9231E5B8900104FD9 /* iOS13VideoRecordingErrorTests */ = {
+			isa = PBXGroup;
+			children = (
+				BBC484CA231E5B8900104FD9 /* iOS13VideoRecordingErrorTests.swift */,
+				BBC484CC231E5B8900104FD9 /* Info.plist */,
+			);
+			path = iOS13VideoRecordingErrorTests;
+			sourceTree = "<group>";
+		};
+		BBC484D4231E5B8900104FD9 /* iOS13VideoRecordingErrorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BBC484D5231E5B8900104FD9 /* iOS13VideoRecordingErrorUITests.swift */,
+				BBC484D7231E5B8900104FD9 /* Info.plist */,
+			);
+			path = iOS13VideoRecordingErrorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BBC484AF231E5B5B00104FD9 /* iOS13VideoRecordingError */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBC484DA231E5B8A00104FD9 /* Build configuration list for PBXNativeTarget "iOS13VideoRecordingError" */;
+			buildPhases = (
+				BBC484AC231E5B5B00104FD9 /* Sources */,
+				BBC484AD231E5B5B00104FD9 /* Frameworks */,
+				BBC484AE231E5B5B00104FD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOS13VideoRecordingError;
+			productName = iOS13VideoRecordingError;
+			productReference = BBC484B0231E5B5B00104FD9 /* iOS13VideoRecordingError.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BBC484C5231E5B8900104FD9 /* iOS13VideoRecordingErrorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBC484DD231E5B8A00104FD9 /* Build configuration list for PBXNativeTarget "iOS13VideoRecordingErrorTests" */;
+			buildPhases = (
+				BBC484C2231E5B8900104FD9 /* Sources */,
+				BBC484C3231E5B8900104FD9 /* Frameworks */,
+				BBC484C4231E5B8900104FD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBC484C8231E5B8900104FD9 /* PBXTargetDependency */,
+			);
+			name = iOS13VideoRecordingErrorTests;
+			productName = iOS13VideoRecordingErrorTests;
+			productReference = BBC484C6231E5B8900104FD9 /* iOS13VideoRecordingErrorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BBC484D0231E5B8900104FD9 /* iOS13VideoRecordingErrorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBC484E0231E5B8A00104FD9 /* Build configuration list for PBXNativeTarget "iOS13VideoRecordingErrorUITests" */;
+			buildPhases = (
+				BBC484CD231E5B8900104FD9 /* Sources */,
+				BBC484CE231E5B8900104FD9 /* Frameworks */,
+				BBC484CF231E5B8900104FD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBC484D3231E5B8900104FD9 /* PBXTargetDependency */,
+			);
+			name = iOS13VideoRecordingErrorUITests;
+			productName = iOS13VideoRecordingErrorUITests;
+			productReference = BBC484D1231E5B8900104FD9 /* iOS13VideoRecordingErrorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BBC484A8231E5B5900104FD9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Qiu Dong";
+				TargetAttributes = {
+					BBC484AF231E5B5B00104FD9 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					BBC484C5231E5B8900104FD9 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = BBC484AF231E5B5B00104FD9;
+					};
+					BBC484D0231E5B8900104FD9 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = BBC484AF231E5B5B00104FD9;
+					};
+				};
+			};
+			buildConfigurationList = BBC484AB231E5B5A00104FD9 /* Build configuration list for PBXProject "iOS13VideoRecordingError" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BBC484A7231E5B5800104FD9;
+			productRefGroup = BBC484B1231E5B5B00104FD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBC484AF231E5B5B00104FD9 /* iOS13VideoRecordingError */,
+				BBC484C5231E5B8900104FD9 /* iOS13VideoRecordingErrorTests */,
+				BBC484D0231E5B8900104FD9 /* iOS13VideoRecordingErrorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BBC484AE231E5B5B00104FD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBC484C0231E5B8800104FD9 /* LaunchScreen.storyboard in Resources */,
+				BBC484BD231E5B8800104FD9 /* Preview Assets.xcassets in Resources */,
+				BBC484BA231E5B8800104FD9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBC484C4231E5B8900104FD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBC484CF231E5B8900104FD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBC484AC231E5B5B00104FD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBC484B4231E5B5B00104FD9 /* AppDelegate.swift in Sources */,
+				BBC484B6231E5B5B00104FD9 /* SceneDelegate.swift in Sources */,
+				BBC484B8231E5B5B00104FD9 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBC484C2231E5B8900104FD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBC484CB231E5B8900104FD9 /* iOS13VideoRecordingErrorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBC484CD231E5B8900104FD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBC484D6231E5B8900104FD9 /* iOS13VideoRecordingErrorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BBC484C8231E5B8900104FD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBC484AF231E5B5B00104FD9 /* iOS13VideoRecordingError */;
+			targetProxy = BBC484C7231E5B8900104FD9 /* PBXContainerItemProxy */;
+		};
+		BBC484D3231E5B8900104FD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBC484AF231E5B5B00104FD9 /* iOS13VideoRecordingError */;
+			targetProxy = BBC484D2231E5B8900104FD9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BBC484BE231E5B8800104FD9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBC484BF231E5B8800104FD9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BBC484D8231E5B8900104FD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BBC484D9231E5B8900104FD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BBC484DB231E5B8A00104FD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"iOS13VideoRecordingError/Preview Content\"";
+				DEVELOPMENT_TEAM = QPMBV2LTTJ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS13VideoRecordingError/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyllenge.iOS13VideoRecordingError;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BBC484DC231E5B8A00104FD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"iOS13VideoRecordingError/Preview Content\"";
+				DEVELOPMENT_TEAM = QPMBV2LTTJ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS13VideoRecordingError/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyllenge.iOS13VideoRecordingError;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BBC484DE231E5B8A00104FD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QPMBV2LTTJ;
+				INFOPLIST_FILE = iOS13VideoRecordingErrorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyllenge.iOS13VideoRecordingErrorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS13VideoRecordingError.app/iOS13VideoRecordingError";
+			};
+			name = Debug;
+		};
+		BBC484DF231E5B8A00104FD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QPMBV2LTTJ;
+				INFOPLIST_FILE = iOS13VideoRecordingErrorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyllenge.iOS13VideoRecordingErrorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS13VideoRecordingError.app/iOS13VideoRecordingError";
+			};
+			name = Release;
+		};
+		BBC484E1231E5B8A00104FD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QPMBV2LTTJ;
+				INFOPLIST_FILE = iOS13VideoRecordingErrorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyllenge.iOS13VideoRecordingErrorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iOS13VideoRecordingError;
+			};
+			name = Debug;
+		};
+		BBC484E2231E5B8A00104FD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QPMBV2LTTJ;
+				INFOPLIST_FILE = iOS13VideoRecordingErrorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyllenge.iOS13VideoRecordingErrorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iOS13VideoRecordingError;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BBC484AB231E5B5A00104FD9 /* Build configuration list for PBXProject "iOS13VideoRecordingError" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBC484D8231E5B8900104FD9 /* Debug */,
+				BBC484D9231E5B8900104FD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBC484DA231E5B8A00104FD9 /* Build configuration list for PBXNativeTarget "iOS13VideoRecordingError" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBC484DB231E5B8A00104FD9 /* Debug */,
+				BBC484DC231E5B8A00104FD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBC484DD231E5B8A00104FD9 /* Build configuration list for PBXNativeTarget "iOS13VideoRecordingErrorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBC484DE231E5B8A00104FD9 /* Debug */,
+				BBC484DF231E5B8A00104FD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBC484E0231E5B8A00104FD9 /* Build configuration list for PBXNativeTarget "iOS13VideoRecordingErrorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBC484E1231E5B8A00104FD9 /* Debug */,
+				BBC484E2231E5B8A00104FD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BBC484A8231E5B5900104FD9 /* Project object */;
+}
