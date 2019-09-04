@@ -16,6 +16,8 @@
 		BBC484E5231E60D300104FD9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBC484E4231E60D300104FD9 /* AVFoundation.framework */; };
 		BBC484E7231E60DB00104FD9 /* libswiftAVFoundation.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BBC484E6231E60DB00104FD9 /* libswiftAVFoundation.tbd */; };
 		BBC484E9231E60E400104FD9 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBC484E8231E60E300104FD9 /* CoreVideo.framework */; };
+		BBDB8682231FCEAE0040934E /* video_input.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BBDB8680231FCEAE0040934E /* video_input.mp4 */; };
+		BBDB8683231FCEAE0040934E /* audio_input.aac in Resources */ = {isa = PBXBuildFile; fileRef = BBDB8681231FCEAE0040934E /* audio_input.aac */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		BBC484E4231E60D300104FD9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		BBC484E6231E60DB00104FD9 /* libswiftAVFoundation.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswiftAVFoundation.tbd; path = usr/lib/swift/libswiftAVFoundation.tbd; sourceTree = SDKROOT; };
 		BBC484E8231E60E300104FD9 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		BBDB8680231FCEAE0040934E /* video_input.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video_input.mp4; sourceTree = "<group>"; };
+		BBDB8681231FCEAE0040934E /* audio_input.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = audio_input.aac; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 		BBC484B2231E5B5B00104FD9 /* iOS13VideoRecordingError */ = {
 			isa = PBXGroup;
 			children = (
+				BBDB8681231FCEAE0040934E /* audio_input.aac */,
+				BBDB8680231FCEAE0040934E /* video_input.mp4 */,
 				BBC484B3231E5B5B00104FD9 /* AppDelegate.swift */,
 				BBC484B9231E5B8800104FD9 /* Assets.xcassets */,
 				BBC484BE231E5B8800104FD9 /* LaunchScreen.storyboard */,
@@ -254,6 +260,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBDB8683231FCEAE0040934E /* audio_input.aac in Resources */,
+				BBDB8682231FCEAE0040934E /* video_input.mp4 in Resources */,
 				BBC484C0231E5B8800104FD9 /* LaunchScreen.storyboard in Resources */,
 				BBC484BD231E5B8800104FD9 /* Preview Assets.xcassets in Resources */,
 				BBC484BA231E5B8800104FD9 /* Assets.xcassets in Resources */,

@@ -11,12 +11,7 @@ import AVFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    var pixelBuffer:CVPixelBuffer?
-    var videoWriter:AVAssetWriter?
-    var videoWriterInput:AVAssetWriterInput?
-    var pixelBufferAdaptor:AVAssetWriterInputPixelBufferAdaptor?
-
-    func compileAudioAndVideoToMovie(audioInputURL:URL, videoInputURL:URL) -> URL? {
+    func compileAudioAndVideoToMovie(audioInputURL:URL, videoInputURL:URL) {
         let docPath:String = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0];
         let videoOutputURL:URL = URL(fileURLWithPath: docPath).appendingPathComponent("video_output.mov");
         let mixComposition = AVMutableComposition();
@@ -52,88 +47,92 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         catch
         {
             print("Exception when compiling movie");
-            return nil;
+//            return nil;
         }
         
-        return videoOutputURL;
+//        return videoOutputURL;
     }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        do {
-            let docPath:String = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0];
-            let videoInputURL = URL(fileURLWithPath: docPath).appendingPathComponent("video_input.mp4");
-            let audioInputURL:URL = URL(fileURLWithPath: docPath).appendingPathComponent("audio_input.aac");
-            /*
-            try videoWriter = AVAssetWriter(url: videoInputURL, fileType: AVFileType.m4v);
-
-            let videoSettings:[String:Any] = [
-                AVVideoCodecKey:AVVideoCodecType.h264,
-                AVVideoCompressionPropertiesKey:[AVVideoAverageBitRateKey: NSNumber(floatLiteral: 46137388)],
-                AVVideoWidthKey: NSNumber(integerLiteral: 3840), AVVideoHeightKey: NSNumber(integerLiteral: 1920)];
-            videoWriterInput = AVAssetWriterInput(mediaType: AVMediaType.video, outputSettings: videoSettings);
-            videoWriterInput?.expectsMediaDataInRealTime = true;
-            videoWriterInput?.transform = __CGAffineTransformMake(1.0, 0.0, 0.0, -1.0, 0.0, 0.0);
-
-            let sourcePixelBufferAttributes:[String:Any] = [kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_32BGRA,
-                                               kCVPixelBufferWidthKey as String: NSNumber(integerLiteral: 3840),
-                                               kCVPixelBufferHeightKey as String: NSNumber(integerLiteral: 1920),
-                                               kCVPixelFormatOpenGLESCompatibility as String: NSNumber(booleanLiteral: CFBooleanGetValue(kCFBooleanTrue!))];
-            guard let videoWriterInput = self.videoWriterInput else { return true; }
-            guard let videoWriter = self.videoWriter else { return true; }
-            pixelBufferAdaptor = AVAssetWriterInputPixelBufferAdaptor(assetWriterInput: videoWriterInput, sourcePixelBufferAttributes: sourcePixelBufferAttributes);
-            
-            if (videoWriter.canAdd(videoWriterInput))
-            {
-                videoWriter.add(videoWriterInput);
-                if (videoWriter.startWriting())
-                {
-                    videoWriter.startSession(atSourceTime: CMTimeMake(value: 0, timescale: 100000));
-                }
-            }
-            
-            guard let pixelBufferAdaptor = self.pixelBufferAdaptor else { return true; }
-            
-            let pixelBufferOutput:UnsafeMutablePointer<CVPixelBuffer?> = UnsafeMutablePointer<CVPixelBuffer?>.allocate(capacity: MemoryLayout<CVPixelBuffer?>.stride);
-            CVPixelBufferPoolCreatePixelBuffer(kCFAllocatorDefault, pixelBufferAdaptor.pixelBufferPool!, pixelBufferOutput);
-            self.pixelBuffer = pixelBufferOutput.pointee;
-            guard let pixelBuffer = self.pixelBuffer else { return true; }
-            
-            DispatchQueue.global().async {
-                for i in 0..<30
-                {
-                    if (pixelBufferAdaptor.assetWriterInput.isReadyForMoreMediaData)
-                    {
-                        let frameTime = CMTimeMake(value: Int64(1000 * i / 30), timescale: 1000);
-                        let appendOK = pixelBufferAdaptor.append(pixelBuffer, withPresentationTime: frameTime);
-                        if (!appendOK || videoWriter.error != nil || videoWriter.status == AVAssetWriter.Status.failed || videoWriter.status == AVAssetWriter.Status.cancelled)
-                        {
-                            Thread.sleep(forTimeInterval: 0.1);
-                        }
-                    }
-                    else
-                    {
-                        Thread.sleep(forTimeInterval: 0.1);
-                    }
-                }
-                videoWriter.endSession(atSourceTime: CMTimeMake(value: 1000, timescale: 1000));
-                videoWriter.finishWriting {
-                    if (videoWriter.status != AVAssetWriter.Status.completed)
-                    {
-                        return;
-                    }
-                    videoWriterInput.markAsFinished();
-                    self.compileAudioAndVideoToMovie(audioInputURL: audioInputURL, videoInputURL: videoInputURL);
-                }
-            }
- */
-            self.compileAudioAndVideoToMovie(audioInputURL: audioInputURL, videoInputURL: videoInputURL);
-        } catch {
-            print("Exception when creating videoWriter");
-        }
+//        let docPath:String = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0];
+//        let videoInputURL = URL(fileURLWithPath: docPath).appendingPathComponent("video_input.mp4");
+//        let audioInputURL:URL = URL(fileURLWithPath: docPath).appendingPathComponent("audio_input.aac");
+        let videoInputURL = URL(fileURLWithPath: Bundle.main.path(forResource: "video_input", ofType: "mp4")!);
+        let audioInputURL = URL(fileURLWithPath: Bundle.main.path(forResource: "audio_input", ofType: "aac")!);
+        compileAudioAndVideoToMovie(audioInputURL: audioInputURL, videoInputURL: videoInputURL);
+//        do {
+//            try videoWriter = AVAssetWriter(url: videoInputURL, fileType: AVFileType.m4v);
+//
+//            let videoSettings:[String:Any] = [
+//                AVVideoCodecKey:AVVideoCodecType.h264,
+//                AVVideoCompressionPropertiesKey:[AVVideoAverageBitRateKey: NSNumber(floatLiteral: 46137388)],
+//                AVVideoWidthKey: NSNumber(integerLiteral: 3840), AVVideoHeightKey: NSNumber(integerLiteral: 1920)];
+//            videoWriterInput = AVAssetWriterInput(mediaType: AVMediaType.video, outputSettings: videoSettings);
+//            videoWriterInput?.expectsMediaDataInRealTime = true;
+//            videoWriterInput?.transform = __CGAffineTransformMake(1.0, 0.0, 0.0, -1.0, 0.0, 0.0);
+//
+//            let sourcePixelBufferAttributes:[String:Any] = [kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_32BGRA,
+//                                               kCVPixelBufferWidthKey as String: NSNumber(integerLiteral: 3840),
+//                                               kCVPixelBufferHeightKey as String: NSNumber(integerLiteral: 1920),
+//                                               kCVPixelFormatOpenGLESCompatibility as String: NSNumber(booleanLiteral: CFBooleanGetValue(kCFBooleanTrue!))];
+//            guard let videoWriterInput = self.videoWriterInput else { return true; }
+//            guard let videoWriter = self.videoWriter else { return true; }
+//            pixelBufferAdaptor = AVAssetWriterInputPixelBufferAdaptor(assetWriterInput: videoWriterInput, sourcePixelBufferAttributes: sourcePixelBufferAttributes);
+//
+//            if (videoWriter.canAdd(videoWriterInput))
+//            {
+//                videoWriter.add(videoWriterInput);
+//                if (videoWriter.startWriting())
+//                {
+//                    videoWriter.startSession(atSourceTime: CMTimeMake(value: 0, timescale: 100000));
+//                }
+//            }
+//
+//            guard let pixelBufferAdaptor = self.pixelBufferAdaptor else { return true; }
+//
+//            let pixelBufferOutput:UnsafeMutablePointer<CVPixelBuffer?> = UnsafeMutablePointer<CVPixelBuffer?>.allocate(capacity: MemoryLayout<CVPixelBuffer?>.stride);
+//            CVPixelBufferPoolCreatePixelBuffer(kCFAllocatorDefault, pixelBufferAdaptor.pixelBufferPool!, pixelBufferOutput);
+//            self.pixelBuffer = pixelBufferOutput.pointee;
+//            guard let pixelBuffer = self.pixelBuffer else { return true; }
+//
+//            DispatchQueue.global().async {
+//                for i in 0..<30
+//                {
+//                    if (pixelBufferAdaptor.assetWriterInput.isReadyForMoreMediaData)
+//                    {
+//                        let frameTime = CMTimeMake(value: Int64(1000 * i / 30), timescale: 1000);
+//                        let appendOK = pixelBufferAdaptor.append(pixelBuffer, withPresentationTime: frameTime);
+//                        if (!appendOK || videoWriter.error != nil || videoWriter.status == AVAssetWriter.Status.failed || videoWriter.status == AVAssetWriter.Status.cancelled)
+//                        {
+//                            Thread.sleep(forTimeInterval: 0.1);
+//                        }
+//                    }
+//                    else
+//                    {
+//                        Thread.sleep(forTimeInterval: 0.1);
+//                    }
+//                }
+//                videoWriter.endSession(atSourceTime: CMTimeMake(value: 1000, timescale: 1000));
+//                videoWriter.finishWriting {
+//                    if (videoWriter.status != AVAssetWriter.Status.completed)
+//                    {
+//                        return;
+//                    }
+//                    videoWriterInput.markAsFinished();
+//                    self.compileAudioAndVideoToMovie(audioInputURL: audioInputURL, videoInputURL: videoInputURL);
+//                }
+//            }
+//        } catch {
+//            print("Exception when creating videoWriter");
+//        }
         
         return true
     }
+    //    var pixelBuffer:CVPixelBuffer?
+    //    var videoWriter:AVAssetWriter?
+    //    var videoWriterInput:AVAssetWriterInput?
+    //    var pixelBufferAdaptor:AVAssetWriterInputPixelBufferAdaptor?
 
     // MARK: UISceneSession Lifecycle
 /*
