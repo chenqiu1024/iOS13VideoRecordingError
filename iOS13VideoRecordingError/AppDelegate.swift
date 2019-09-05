@@ -14,6 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func compileAudioAndVideoToMovie(audioInputURL:URL, videoInputURL:URL) {
         let docPath:String = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0];
         let videoOutputURL:URL = URL(fileURLWithPath: docPath).appendingPathComponent("video_output.mov");
+        do
+        {
+            try FileManager.default.removeItem(at: videoOutputURL);
+        }
+        catch {}
         let mixComposition = AVMutableComposition();
         let videoTrack = mixComposition.addMutableTrack(withMediaType: AVMediaType.video, preferredTrackID: kCMPersistentTrackID_Invalid);
         let videoInputAsset = AVURLAsset(url: videoInputURL);
@@ -21,8 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let audioInputAsset = AVURLAsset(url: audioInputURL);
         do
         {
-            try videoTrack?.insertTimeRange(CMTimeRangeMake(start: CMTimeMake(value: 0, timescale: 1000), duration: CMTimeMake(value: 3000, timescale: 1000)), of: videoInputAsset.tracks(withMediaType: AVMediaType.video)[0], at: CMTimeMake(value: 0, timescale: 1000));
-            try audioTrack?.insertTimeRange(CMTimeRangeMake(start: CMTimeMake(value: 0, timescale: 1000), duration: CMTimeMake(value: 3000, timescale: 1000)), of: audioInputAsset.tracks(withMediaType: AVMediaType.audio)[0], at: CMTimeMake(value: 0, timescale: 1000));
+            try videoTrack?.insertTimeRange(CMTimeRangeMake(start: CMTimeMake(value: 0, timescale: 1000), duration: CMTimeMake(value: 3000, timescale: 1000)), of: videoInputAsset.tracks(withMediaType: AVMediaType.video)[0], at: CMTimeMake(value: 0, timescale: 1000));// Insert an 3-second video clip into the video track
+            try audioTrack?.insertTimeRange(CMTimeRangeMake(start: CMTimeMake(value: 0, timescale: 1000), duration: CMTimeMake(value: 3000, timescale: 1000)), of: audioInputAsset.tracks(withMediaType: AVMediaType.audio)[0], at: CMTimeMake(value: 0, timescale: 1000));// Insert an 3-second audio clip into the audio track
             
             let assetExporter = AVAssetExportSession(asset: mixComposition, presetName: AVAssetExportPresetPassthrough);
             assetExporter?.outputFileType = AVFileType.mov;
@@ -42,15 +47,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 default:
                     print("Exporting with other result");
                 }
+                if let error = assetExporter?.error
+                {
+                    print("Error:\n\(error)");
+                }
             }
         }
         catch
         {
             print("Exception when compiling movie");
-//            return nil;
         }
-        
-//        return videoOutputURL;
     }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
